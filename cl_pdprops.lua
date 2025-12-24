@@ -29,7 +29,7 @@ end
 
 local function Cooldown()
     if cooldown then
-        ShowNotification('You cant put objects down that fast!', 'error')
+        ShowNotification('Nemôžeš tak rýchlo pokladať objekty', 'error')
     else
         cooldown = true
         SetTimeout(4000, function()
@@ -231,3 +231,4 @@ CreateThread(function()
         Wait(0)
     end
 end)
+
