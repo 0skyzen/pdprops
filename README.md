@@ -37,24 +37,33 @@ Tento script umožňuje policajtom nosiť, klásť a odstraňovať policejné pr
    ```
 3. Vytvorte itemy v `ox_inventory/data/items.lua`:
    ```lua
-   ['pd_cone'] = {
-       label = 'Dopravný kužeľ',
-       weight = 2000,
-       stack = false,
-       close = true,
-   },
-   ['pd_spikestrip'] = {
-       label = 'Spike strip',
-       weight = 5000,
-       stack = false,
-       close = true,
-   },
-   ['pd_barrier'] = {
-       label = 'Bariéra',
-       weight = 10000,
-       stack = false,
-       close = true,
-   },
+    ['pd_cone'] = {
+        label = 'Policejní kužel',
+        weight = 500,
+        stack = true,
+        close = true,
+        server = {
+            export = 'pdprops.useItem'
+        }
+    },
+    ['pd_spikestrip'] = {
+        label = 'Ostnatý pás',
+        weight = 2000,
+        stack = true,
+        close = true,
+        server = {
+            export = 'pdprops.useItem'
+        }
+    },
+    ['pd_barrier'] = {
+        label = 'Policejní bariéra',
+        weight = 3000,
+        stack = true,
+        close = true,
+        server = {
+            export = 'pdprops.useItem'
+        }
+    },
    ```
 
 ## 🎯 Použitie
