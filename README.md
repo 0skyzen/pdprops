@@ -33,7 +33,7 @@ Tento script umožňuje policajtom nosiť, klásť a odstraňovať policejné pr
 1. Stiahnite a umiestnite script do vášho `resources` priečinka
 2. Pridajte do `server.cfg`:
    ```
-   ensure police_base
+   ensure pdprops
    ```
 3. Vytvorte itemy v `ox_inventory/data/items.lua`:
    ```lua
@@ -99,12 +99,4 @@ Script je obmedzený na tieto joby:
 - Cooldown 4 sekundy medzi kladením props
 - Props sa synchronizujú medzi všetkými hráčmi
 - Odstránenie props trvá 3.5 sekundy s progress barom
-
-## 📝 Licencia
-
-Tento script je poskytovaný "tak ako je" bez záruky.
-
-## 👨‍💻 Autor
-
-Vytvorené pre FiveM server komunitu.
 
