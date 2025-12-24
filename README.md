@@ -2,11 +2,11 @@
 
 FiveM script pre správu policejných props (kužele, spike strips, bariéry) pre ESX framework.
 
-## 📋 Popis
+## Popis
 
 Tento script umožňuje policajtom nosiť, klásť a odstraňovať policejné props pomocou inventárových itemov. Props sa automaticky synchronizujú medzi hráčmi a majú realistické animácie a fyziku.
 
-## ✨ Funkcie
+## Funkcie
 
 - **Nosenie props** - Hráči môžu použiť item z inventára na vytiahnutie propu
 - **Kladenie props** - Props sa môžu položiť na zem s realistickou animáciou
@@ -15,13 +15,13 @@ Tento script umožňuje policajtom nosiť, klásť a odstraňovať policejné pr
 - **Cooldown systém** - Zabráni spamovaniu kladenia props
 - **Job restriction** - Iba policajti môžu používať props
 
-## 🎮 Podporované Props
+## Podporované Props
 
 - **pd_cone** - Dopravný kužeľ (`prop_roadcone02a`)
 - **pd_spikestrip** - Spike strip (`p_ld_stinger_s`)
 - **pd_barrier** - Bariéra (`prop_barrier_work05`)
 
-## 📦 Závislosti
+## Závislosti
 
 - [ox_lib](https://github.com/overextended/ox_lib) - Pre UI a utility funkcie
 - [ox_target](https://github.com/overextended/ox_target) - Pre interakcie s props
@@ -66,7 +66,7 @@ Tento script umožňuje policajtom nosiť, klásť a odstraňovať policejné pr
     },
    ```
 
-## 🎯 Použitie
+## Použitie
 
 ### Pre hráčov:
 1. Použite item z inventára (`pd_cone`, `pd_spikestrip`, alebo `pd_barrier`)
@@ -79,7 +79,7 @@ Tento script umožňuje policajtom nosiť, klásť a odstraňovať policejné pr
 2. Použite ox_target interakciu "Odstrániť objekt"
 3. Po dokončení progress baru sa prop odstráni a vráti do vášho inventára
 
-## ⚙️ Konfigurácia
+## Konfigurácia
 
 V súbore `client/pdprops/pdprops.lua` môžete upraviť:
 
@@ -89,20 +89,20 @@ local Config = {
 }
 ```
 
-## 🎨 Animácie
+## Animácie
 
 - **Kužele**: `anim@move_m@trash` - `idle`
 - **Spike strips**: `anim@heists@box_carry@` - `idle`
 - **Bariéry**: `anim@heists@box_carry@` - `idle`
 
-## 🔒 Job Restriction
+## Job Restriction
 
 Script je obmedzený na tieto joby:
 - `police`
 - `sheriff`
 - `sahp`
 
-## 🐛 Poznámky
+## Poznámky
 
 - Spike strips automaticky poškodzujú všetky pneumatiky vozidiel pri prejazde
 - Cooldown 4 sekundy medzi kladením props
